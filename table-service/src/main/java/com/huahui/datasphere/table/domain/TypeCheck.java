@@ -22,6 +22,7 @@
  */
 
 package com.huahui.datasphere.table.domain;
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Set;
 
@@ -40,8 +41,7 @@ import java.util.Collections;
  * 存储层数据类型对照表
  */
 @Table(name = "type_contrast")
-public class TypeCheck 
-{
+public class TypeCheck implements Serializable {
 	private static final long serialVersionUID = 321566870187324L;
 
 	/**
