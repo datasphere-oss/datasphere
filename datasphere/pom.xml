@@ -6,6 +6,6 @@
   <packaging>pom</packaging>
   
   <modules>
-      <module>datasphere-datasource</module>
+      <module>datasource</module>
   </modules>
 </project>
