@@ -32,21 +32,14 @@ public class DMCodeItem implements Serializable {
 	
 	private static final long serialVersionUID = 1L;
 	
-	private transient static final Set<String> __PrimaryKeys;
 
 	/**
 	* 检查给定的名字，是否为主键中的字段
 	* @param name String 检验是否为主键的名字
 	* @return
 	*/
-	public static boolean isPrimaryKey(String name) { return __PrimaryKeys.contains(name); } 
-	public static Set<String> getPrimaryKeyNames() { return __PrimaryKeys; } 
 	/** 数据对标元管理代码项信息表 */
-	static {
-		Set<String> __tmpPKS = new HashSet<>();
-		__tmpPKS.add("code_item_id");
-		__PrimaryKeys = Collections.unmodifiableSet(__tmpPKS);
-	}
+	
 	
 	// 代码项主键
 	protected Long codeItemId;
