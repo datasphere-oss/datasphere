@@ -30,7 +30,6 @@ import javax.persistence.Id;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
-import org.acumos.cds.domain.MLPUserCatFavMap;
 
 import io.swagger.annotations.ApiModelProperty;
 
