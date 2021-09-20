@@ -32,6 +32,10 @@ import javax.persistence.Id;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
+import org.hibernate.annotations.Table;
+
+import io.swagger.annotations.ApiModelProperty;
+
 import java.util.HashSet;
 import java.util.Collections;
 
@@ -40,7 +44,7 @@ import java.util.Collections;
  */
 @Table(tableName = "database_set")
 public class DatabaseSetting implements Serializable {
-{
+	
 	private static final long serialVersionUID = 1L;
 	
 	@Id

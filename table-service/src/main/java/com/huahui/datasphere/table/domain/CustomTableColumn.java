@@ -30,6 +30,8 @@ import javax.persistence.Id;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
+import io.swagger.annotations.ApiModelProperty;
+
 public class CustomTableColumn implements Serializable {
 
 	private static final long serialVersionUID = 1L;

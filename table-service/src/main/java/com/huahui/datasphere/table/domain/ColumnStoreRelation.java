@@ -32,6 +32,8 @@ import javax.persistence.Id;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
+import io.swagger.annotations.ApiModelProperty;
+
 import java.util.HashSet;
 import java.util.Collections;
 
