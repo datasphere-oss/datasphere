@@ -1,3 +1,6 @@
 [submodule "datasphere-datasource"]
 	path = datasphere-datasource
 	url = git@github.com:datasphere-oss/datasphere-datasource.git
+[submodule "workbench-service"]
+	path = workbench-service
+	url = git@github.com:datasphere-oss/workbench-service.git
