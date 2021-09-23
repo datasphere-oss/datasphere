@@ -1,0 +1,113 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.datasphere</groupId>
+  <artifactId>datasphere</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  
+ 
+  
+  
+  <dependencies>
+		
+		<dependency>
+		    <groupId>org.apache.commons</groupId>
+		    <artifactId>commons-lang3</artifactId>
+		    <version>3.3.2</version>
+		</dependency>
+		
+		  
+		<dependency>
+		    <groupId>org.apache.commons</groupId>
+		    <artifactId>commons-collections4</artifactId>
+		    <version>4.4</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>org.springframework.security</groupId>
+		    <artifactId>spring-security-config</artifactId>
+		    <version>5.2.3.RELEASE</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>org.springframework.security</groupId>
+		    <artifactId>spring-security-web</artifactId>
+		    <version>5.2.3.RELEASE</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>org.springframework</groupId>
+		    <artifactId>spring-context</artifactId>
+		    <version>5.2.3.RELEASE</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>org.slf4j</groupId>
+		    <artifactId>slf4j-api</artifactId>
+		    <version>1.7.25</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>org.slf4j</groupId>
+		    <artifactId>slf4j-log4j12</artifactId>
+		    <version>1.7.25</version>
+		    <scope>test</scope>
+		</dependency>
+		
+		<dependency>
+			<groupId>commons-beanutils</groupId>
+			<artifactId>commons-beanutils</artifactId>
+			<version>1.9.3</version>
+			<exclusions>
+				<exclusion>
+					<artifactId>commons-logging</artifactId>
+					<groupId>commons-logging</groupId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		
+		<dependency>
+		    <groupId>org.springframework</groupId>
+		    <artifactId>spring-webmvc</artifactId>
+		    <version>5.2.3.RELEASE</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-jdbc</artifactId>
+			<version>5.2.3.RELEASE</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-tx</artifactId>
+			<version>5.2.3.RELEASE</version>
+		</dependency>
+		
+	</dependencies>
+	
+
+	 <repositories>
+		<repository>
+            <id>spring-milestones</id>
+            <name>Spring Milestones</name>
+            <url>https://repo.spring.io/libs-milestone</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+		   
+        <repository>  
+            <id>alimaven</id>  
+            <name>aliyun maven</name>  
+            <url>http://maven.aliyun.com/nexus/content/groups/public/</url>  
+            <releases>  
+                <enabled>true</enabled>  
+            </releases>  
+            <snapshots>  
+                <enabled>false</enabled>  
+            </snapshots>  
+        </repository>  
+</repositories> 
+	
+</project>
