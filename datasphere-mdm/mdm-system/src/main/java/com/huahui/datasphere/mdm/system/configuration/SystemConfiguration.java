@@ -6,6 +6,7 @@ import java.util.Collections;
 import java.util.Map;
 import java.util.Objects;
 import java.util.Properties;
+import java.util.Set;
 
 import javax.sql.DataSource;
 
@@ -23,6 +24,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.MessageSource;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
 import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 import org.springframework.context.support.ResourceBundleMessageSource;
 import org.springframework.core.env.Environment;
@@ -45,6 +47,7 @@ import bitronix.tm.TransactionManagerServices;
  * Root spring context link.
  */
 @Configuration
+@PropertySource("classpath:conf/backend.properties")
 public class SystemConfiguration extends AbstractConfiguration {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(SystemConfiguration.class);
@@ -129,7 +132,10 @@ public class SystemConfiguration extends AbstractConfiguration {
         join.getTcpIpConfig().setEnabled(tpcIpEnabled);
         join.getMulticastConfig().setEnabled(multicastEnabled);
         join.getAwsConfig().setEnabled(false);
-
+        HazelcastInstance instance = Hazelcast.getHazelcastInstanceByName("unidata");
+        if(instance!=null)
+        	return instance;
+        else
         return Hazelcast.getOrCreateHazelcastInstance(unidataHzConfig);
     }
 

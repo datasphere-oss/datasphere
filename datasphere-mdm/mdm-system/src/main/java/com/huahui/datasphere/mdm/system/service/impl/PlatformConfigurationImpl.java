@@ -30,6 +30,10 @@ import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.InitializingBean;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
+import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Component;
 
 import com.fasterxml.uuid.EthernetAddress;
@@ -44,12 +48,16 @@ import com.huahui.datasphere.mdm.system.type.annotation.ConfigurationRef;
 import com.huahui.datasphere.mdm.system.type.configuration.ConfigurationValue;
 import com.huahui.datasphere.mdm.system.type.format.DumpTargetFormat;
 import com.huahui.datasphere.mdm.system.util.TextUtils;
+import com.sun.xml.fastinfoset.sax.Properties;
 
 /**
  * @author theseusyang
  * Platform configuration.
  */
+
 @Component
+@Configuration
+@PropertySource("classpath:conf/backend.properties")
 public class PlatformConfigurationImpl implements PlatformConfiguration, InitializingBean {
     /**
      * The logger.
@@ -77,6 +85,10 @@ public class PlatformConfigurationImpl implements PlatformConfiguration, Initial
      */
     @ConfigurationRef(SystemConfigurationConstants.PROPERTY_DEVELOPER_MODE)
     private ConfigurationValue<Boolean> developerMode;
+    
+    @Autowired 
+    Environment env;
+    
     /**
      * Major number.
      */
@@ -192,11 +204,12 @@ public class PlatformConfigurationImpl implements PlatformConfiguration, Initial
      */
     @Override
     public void afterPropertiesSet() {
-
+    	
+    	
         if (!nodeId.hasValue()
           || nodeId.getValue().length() != CORRECT_NODE_LENGTH
           || !StringUtils.containsOnly(nodeId.getValue(), VALID_CHARS)) {
-            String message = TextUtils.getTextWithLocaleAndDefault(Locale.ENGLISH, SystemExceptionIds.EX_SYSTEM_NODE_ID_UNDEFINED.message(), "");
+            String message = TextUtils.getTextWithLocaleAndDefault(Locale.CHINESE, SystemExceptionIds.EX_SYSTEM_NODE_ID_UNDEFINED.message(), "");
             LOGGER.error(message);
             throw new PlatformFailureException(message, SystemExceptionIds.EX_SYSTEM_NODE_ID_UNDEFINED);
         }

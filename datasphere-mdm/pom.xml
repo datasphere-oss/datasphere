@@ -1,8 +1,605 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.huahui.datasphere.mdm</groupId>
-  <artifactId>dataspehre-mdm</artifactId>
+  <groupId>unidata-ce</groupId>
+  <artifactId>unidata-ce</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  
+  
+  <modules>
+    <module>org.datasphere.mdm.system</module>
+  	<module>org.datasphere.mdm.core</module>
+  	<module>org.datasphere.mdm.data</module>
+  	
+  	<module>org.datasphere.mdm.dq.core</module>
+  	<module>org.datasphere.mdm.dq.data</module>
+  	
+  	<module>org.datasphere.mdm.draft</module>
+  	<module>org.datasphere.mdm.job.reindex</module>
+  	<module>org.datasphere.mdm.matching.core</module>
+  	<module>org.datasphere.mdm.matching.data</module>
+  	<module>org.datasphere.mdm.matching.storage.postgres</module>
+  	
+  	<module>org.datasphere.mdm.meta</module>
+  	<module>org.datasphere.mdm.rest.core</module>
+  	<module>org.datasphere.mdm.rest.system</module>
+  	<module>org.datasphere.mdm.rest.data</module>
+  	<module>org.datasphere.mdm.rest.draft</module>
+  	<module>org.datasphere.mdm.rest.meta</module>
+  	<module>org.datasphere.mdm.rest.search</module>
+  	
+  	<module>org.datasphere.mdm.rest.v1.dq.core</module>
+  	<module>org.datasphere.mdm.rest.v1.dq.data</module>
+  	<module>org.datasphere.mdm.rest.v1.draft</module>
+  	
+  	<module>org.datasphere.mdm.rest.v1.matching.core</module>
+  	<module>org.datasphere.mdm.rest.v1.matching.data</module>
+  	<module>org.datasphere.mdm.rest.v1.meta</module>
+  	<module>org.datasphere.mdm.rest.v1.search</module>
+  	<module>org.datasphere.mdm.rest.v1.data</module>
+  	
+  	<module>org.datasphere.mdm.search</module>
+  	<module>org.datasphere.mdm.war</module>
+  	  	  	  	
+  	
+  </modules>
+  <dependencies>
+  
+
+<!-- https://mvnrepository.com/artifact/org.quartz-scheduler/quartz -->
+<dependency>
+    <groupId>org.quartz-scheduler</groupId>
+    <artifactId>quartz</artifactId>
+    <version>2.3.2</version>
+</dependency>
+
+  	
+  	
+	<dependency>
+		<groupId>io.springfox</groupId>
+		<artifactId>springfox-swagger2</artifactId>
+		<version>2.9.2</version>
+		<exclusions>
+			<exclusion>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-context</artifactId>
+			</exclusion>
+			<exclusion>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-beans</artifactId>
+			</exclusion>
+		</exclusions>
+	</dependency>
+	<dependency>
+		<groupId>io.springfox</groupId>
+		<artifactId>springfox-swagger-ui</artifactId>
+		<version>2.9.2</version>
+	</dependency>
+	
+ <dependency>
+  	<groupId>org.springframework.boot</groupId>
+  	<artifactId>spring-boot-starter</artifactId>
+  	<version>2.4.5</version>
+  	<exclusions>
+  		<exclusion>
+  			<groupId>org.springframework.boot</groupId>
+  			<artifactId>spring-boot-starter-logging</artifactId>
+  		</exclusion>
+  		<exclusion>
+  			<groupId>ch.qos.logback</groupId>
+  			<artifactId>logback-classic</artifactId>
+  		</exclusion>
+  	</exclusions>
+  </dependency>
+
+  <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-web -->
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-web</artifactId>
+    <version>2.4.5</version>
+    <exclusions>
+    	<exclusion>
+    		<groupId>org.springframework</groupId>
+    		<artifactId>spring-beans</artifactId>
+    	</exclusion>
+    	<exclusion>
+  			<groupId>org.springframework.boot</groupId>
+  			<artifactId>spring-boot-starter-logging</artifactId>
+  		</exclusion>
+    	<exclusion>
+  			<groupId>ch.qos.logback</groupId>
+  			<artifactId>logback-classic</artifactId>
+  		</exclusion>
+    </exclusions>
+</dependency>
+
+
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-jdbc</artifactId>
+    <version>5.3.4</version>
+    <exclusions>
+    	<exclusion>
+    		<groupId>org.springframework</groupId>
+    		<artifactId>spring-beans</artifactId>
+    	</exclusion>
+    </exclusions>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-core -->
+<dependency>
+    <groupId>org.springframework.security</groupId>
+    <artifactId>spring-security-core</artifactId>
+    <version>5.2.3.RELEASE</version>
+    <exclusions>
+    	<exclusion>
+    		<groupId>org.springframework</groupId>
+    		<artifactId>spring-context</artifactId>
+    	</exclusion>
+    	<exclusion>
+    		<groupId>org.springframework</groupId>
+    		<artifactId>spring-beans</artifactId>
+    	</exclusion>
+    </exclusions>
+</dependency>
+
+
+<!-- https://mvnrepository.com/artifact/org.springframework.batch/spring-batch-core -->
+<dependency>
+    <groupId>org.springframework.batch</groupId>
+    <artifactId>spring-batch-core</artifactId>
+    <version>4.2.4.RELEASE</version>
+    <exclusions>
+    	<exclusion>
+    		<groupId>org.springframework</groupId>
+    		<artifactId>spring-context</artifactId>
+    	</exclusion>
+    	<exclusion>
+    		<groupId>org.springframework</groupId>
+    		<artifactId>spring-beans</artifactId>
+    	</exclusion>
+    </exclusions>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/org.springframework.batch/spring-batch-integration -->
+<dependency>
+    <groupId>org.springframework.batch</groupId>
+    <artifactId>spring-batch-integration</artifactId>
+    <version>4.2.4.RELEASE</version>
+    <exclusions>
+    	<exclusion>
+    		<groupId>org.springframework</groupId>
+    		<artifactId>spring-context</artifactId>
+    	</exclusion>
+    	<exclusion>
+    		<groupId>org.springframework</groupId>
+    		<artifactId>spring-beans</artifactId>
+    	</exclusion>
+    </exclusions>
+</dependency>
+
+
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-context-support</artifactId>
+    <version>5.3.6</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/org.springframework/spring-websocket -->
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-websocket</artifactId>
+    <version>5.3.6</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/org.springframework.data/spring-data-jpa -->
+<dependency>
+    <groupId>org.springframework.data</groupId>
+    <artifactId>spring-data-jpa</artifactId>
+    <version>2.5.4</version>
+</dependency>
+
+
+
+<dependency>
+    <groupId>org.apache.commons</groupId>
+    <artifactId>commons-lang3</artifactId>
+    <version>3.9</version>
+</dependency>
+
+  
+<dependency>
+    <groupId>org.apache.commons</groupId>
+    <artifactId>commons-collections4</artifactId>
+    <version>4.4</version>
+</dependency>
+		
+<!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
+<dependency>
+    <groupId>commons-io</groupId>
+    <artifactId>commons-io</artifactId>
+    <version>2.6</version>
+</dependency>
+
+
+<dependency>
+    <groupId>commons-beanutils</groupId>
+    <artifactId>commons-beanutils</artifactId>
+    <version>1.9.4</version>
+</dependency>
+		
+<!-- https://mvnrepository.com/artifact/com.fasterxml.uuid/java-uuid-generator -->
+<dependency>
+    <groupId>com.fasterxml.uuid</groupId>
+    <artifactId>java-uuid-generator</artifactId>
+    <version>3.2.0</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core -->
+<dependency>
+    <groupId>com.fasterxml.jackson.core</groupId>
+    <artifactId>jackson-core</artifactId>
+    <version>2.11.1</version>
+</dependency>
+
+
+<dependency>
+    <groupId>com.fasterxml.jackson.core</groupId>
+    <artifactId>jackson-databind</artifactId>
+    <version>2.11.1</version>
+</dependency>
+
+
+<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.dataformat/jackson-dataformat-xml -->
+<dependency>
+    <groupId>com.fasterxml.jackson.dataformat</groupId>
+    <artifactId>jackson-dataformat-xml</artifactId>
+    <version>2.11.1</version>
+</dependency>
+
+
+<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.datatype/jackson-datatype-jsr310 -->
+<dependency>
+    <groupId>com.fasterxml.jackson.datatype</groupId>
+    <artifactId>jackson-datatype-jsr310</artifactId>
+    <version>2.11.1</version>
+</dependency>
+
+
+<!-- https://mvnrepository.com/artifact/io.protostuff/protostuff-api -->
+<dependency>
+    <groupId>io.protostuff</groupId>
+    <artifactId>protostuff-api</artifactId>
+    <version>1.7.4</version>
+</dependency>
+
+
+<dependency>
+    <groupId>io.protostuff</groupId>
+    <artifactId>protostuff-core</artifactId>
+    <version>1.7.4</version>
+</dependency>
+
+
+
+
+<!-- https://mvnrepository.com/artifact/org.apache.camel/camel-core -->
+<dependency>
+    <groupId>org.apache.camel</groupId>
+    <artifactId>camel-core</artifactId>
+    <version>3.0.0</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/org.apache.camel/camel-spring -->
+<dependency>
+    <groupId>org.apache.camel</groupId>
+    <artifactId>camel-spring</artifactId>
+    <version>3.0.0</version>
+    <exclusions>
+    	<exclusion>
+    		<groupId>org.springframework</groupId>
+    		<artifactId>spring-context</artifactId>
+    	</exclusion>
+    	<exclusion>
+    		<groupId>org.springframework</groupId>
+    		<artifactId>spring-beans</artifactId>
+    	</exclusion>
+    </exclusions>
+</dependency>
+
+<dependency>
+    <groupId>org.apache.camel</groupId>
+    <artifactId>camel-management</artifactId>
+    <version>3.0.0</version>
+</dependency>
+
+
+<!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-api -->
+<dependency>
+    <groupId>org.slf4j</groupId>
+    <artifactId>slf4j-api</artifactId>
+    <version>1.7.26</version>
+</dependency>
+
+
+
+<!-- https://mvnrepository.com/artifact/org.javasimon/javasimon-core -->
+<dependency>
+    <groupId>org.javasimon</groupId>
+    <artifactId>javasimon-core</artifactId>
+    <version>4.1.4</version>
+</dependency>
+
+<dependency>
+    <groupId>org.javasimon</groupId>
+    <artifactId>javasimon-console-embed</artifactId>
+    <version>4.1.4</version>
+</dependency>
+
+
+
+<dependency>
+    <groupId>org.threeten</groupId>
+    <artifactId>threeten-extra</artifactId>
+    <version>1.4</version>
+</dependency>
+
+
+<!-- https://mvnrepository.com/artifact/javax/javaee-api -->
+<dependency>
+    <groupId>javax</groupId>
+    <artifactId>javaee-api</artifactId>
+    <version>7.0</version>
+    <scope>provided</scope>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/com.hazelcast/hazelcast -->
+<dependency>
+    <groupId>com.hazelcast</groupId>
+    <artifactId>hazelcast</artifactId>
+    <version>4.2</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/com.hazelcast.jet/hazelcast-jet -->
+<dependency>
+    <groupId>com.hazelcast.jet</groupId>
+    <artifactId>hazelcast-jet</artifactId>
+    <version>4.2</version>
+</dependency>
+
+
+<dependency>
+    <groupId>com.hazelcast</groupId>
+    <artifactId>hazelcast-spring</artifactId>
+    <version>4.2</version>
+</dependency>
+
+
+
+<!-- https://mvnrepository.com/artifact/com.github.marcus-nl.btm/btm -->
+<dependency>
+    <groupId>com.github.marcus-nl.btm</groupId>
+    <artifactId>btm</artifactId>
+    <version>3.0.0-mk1</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/com.github.marcus-nl.btm/btm-tomcat55-lifecycle -->
+<dependency>
+    <groupId>com.github.marcus-nl.btm</groupId>
+    <artifactId>btm-tomcat55-lifecycle</artifactId>
+    <version>3.0.0-mk1</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/com.github.marcus-nl.btm/btm-spring -->
+<dependency>
+    <groupId>com.github.marcus-nl.btm</groupId>
+    <artifactId>btm-spring</artifactId>
+    <version>3.0.0-mk1</version>
+</dependency>
+
+
+
+
+
+<!-- https://mvnrepository.com/artifact/javax.annotation/javax.annotation-api -->
+<dependency>
+    <groupId>javax.annotation</groupId>
+    <artifactId>javax.annotation-api</artifactId>
+    <version>1.3.2</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/com.thoughtworks.xstream/xstream -->
+<dependency>
+    <groupId>com.thoughtworks.xstream</groupId>
+    <artifactId>xstream</artifactId>
+    <version>1.4.11.1</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-api -->
+<dependency>
+    <groupId>org.slf4j</groupId>
+    <artifactId>slf4j-api</artifactId>
+    <version>1.7.26</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/ch.qos.logback/logback-classic -->
+<dependency>
+    <groupId>ch.qos.logback</groupId>
+    <artifactId>logback-classic</artifactId>
+    <version>1.2.3</version>
+   	<scope>provided</scope>
+</dependency>
+<!-- https://mvnrepository.com/artifact/ch.qos.logback/logback-core -->
+<dependency>
+    <groupId>ch.qos.logback</groupId>
+    <artifactId>logback-core</artifactId>
+    <version>1.2.3</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/org.postgresql/postgresql -->
+<dependency>
+    <groupId>org.postgresql</groupId>
+    <artifactId>postgresql</artifactId>
+    <version>42.2.23</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
+<dependency>
+    <groupId>javax.servlet</groupId>
+    <artifactId>javax.servlet-api</artifactId>
+    <version>4.0.1</version>
+    <scope>provided</scope>
+</dependency>
+
+
+<dependency>
+    <groupId>org.apache.cxf</groupId>
+    <artifactId>cxf-core</artifactId>
+    <version>3.3.3</version>
+</dependency>
+
+<dependency>
+    <groupId>org.apache.cxf</groupId>
+    <artifactId>cxf-rt-frontend-jaxrs</artifactId>
+    <version>3.3.3</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/org.apache.cxf/cxf-rt-frontend-jaxws -->
+<dependency>
+    <groupId>org.apache.cxf</groupId>
+    <artifactId>cxf-rt-frontend-jaxws</artifactId>
+    <version>3.3.3</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/org.apache.cxf/cxf-rt-rs-service-description-openapi-v3 -->
+<dependency>
+    <groupId>org.apache.cxf</groupId>
+    <artifactId>cxf-rt-rs-service-description-openapi-v3</artifactId>
+    <version>3.3.3</version>
+</dependency>
+
+
+<!-- https://mvnrepository.com/artifact/org.mvel/mvel2 -->
+<dependency>
+    <groupId>org.mvel</groupId>
+    <artifactId>mvel2</artifactId>
+    <version>2.4.12.Final</version>
+</dependency>
+
+<dependency>
+    <groupId>com.google.code.findbugs</groupId>
+    <artifactId>jsr305</artifactId>
+    <version>3.0.2</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/javax.xml.stream/stax-api -->
+<dependency>
+    <groupId>javax.xml.stream</groupId>
+    <artifactId>stax-api</artifactId>
+    <version>1.0-2</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/io.prometheus/simpleclient_servlet -->
+<dependency>
+    <groupId>io.prometheus</groupId>
+    <artifactId>simpleclient_servlet</artifactId>
+    <version>0.8.0</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/io.prometheus/simpleclient_dropwizard -->
+<dependency>
+    <groupId>io.prometheus</groupId>
+    <artifactId>simpleclient_dropwizard</artifactId>
+    <version>0.8.0</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/io.prometheus/simpleclient_hotspot -->
+<dependency>
+    <groupId>io.prometheus</groupId>
+    <artifactId>simpleclient_hotspot</artifactId>
+    <version>0.8.0</version>
+</dependency>
+
+<dependency>
+    <groupId>io.dropwizard.metrics5</groupId>
+    <artifactId>metrics-jvm</artifactId>
+    <version>5.0.0</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/io.dropwizard.metrics5/metrics-core -->
+<dependency>
+    <groupId>io.dropwizard.metrics5</groupId>
+    <artifactId>metrics-core</artifactId>
+    <version>5.0.0</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/io.dropwizard.metrics5/metrics-servlets -->
+<dependency>
+    <groupId>io.dropwizard.metrics5</groupId>
+    <artifactId>metrics-servlets</artifactId>
+    <version>5.0.0</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/io.dropwizard.metrics5/metrics-healthchecks -->
+<dependency>
+    <groupId>io.dropwizard.metrics5</groupId>
+    <artifactId>metrics-healthchecks</artifactId>
+    <version>5.0.0</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/org.jgrapht/jgrapht-core -->
+<dependency>
+    <groupId>org.jgrapht</groupId>
+    <artifactId>jgrapht-core</artifactId>
+    <version>0.9.1</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/org.elasticsearch/elasticsearch -->
+<dependency>
+    <groupId>org.elasticsearch</groupId>
+    <artifactId>elasticsearch</artifactId>
+    <version>7.8.1</version>
+</dependency>
+
+<dependency>
+    <groupId>org.elasticsearch.client</groupId>
+    <artifactId>transport</artifactId>
+    <version>7.8.1</version>
+</dependency>
+
+<dependency>
+  <groupId>org.elasticsearch.plugin</groupId>
+  <artifactId>x-pack-sql-jdbc</artifactId>
+  <version>7.8.1</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
+<dependency>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>poi</artifactId>
+    <version>5.0.0</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
+<dependency>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>poi-ooxml</artifactId>
+    <version>5.0.0</version>
+</dependency>
+
+
+
+
+
+<dependency>
+	<groupId>nl.myndocs</groupId>
+	<artifactId>database-migrator</artifactId>
+	<version>1.2-SNAPSHOT</version>
+	<scope>system</scope>
+	<systemPath>/Users/theseusyang/Dev/unidata-platform/extlib/database-migrator-1.2-SNAPSHOT.jar</systemPath>
+</dependency>
+        
+  </dependencies>
+  
+  
   <build>
     <sourceDirectory>src</sourceDirectory>
     <plugins>
@@ -13,6 +610,64 @@
           <release>11</release>
         </configuration>
       </plugin>
+       <plugin>
+    <artifactId>maven-resources-plugin</artifactId>
+    <version>2.5</version>
+    <executions>
+        <execution>
+            <id>copy-xmls</id>
+            <phase>process-sources</phase>
+            <goals>
+                <goal>copy-resources</goal>
+            </goals>
+            <configuration>                                  
+                <outputDirectory>${basedir}/target/classes</outputDirectory>
+                <resources>
+                    <resource>
+                        <directory>${basedir}/src/main/resources</directory>
+                        <includes>
+                            <include>**/*.xml</include>
+                        </includes>
+                    </resource>
+                </resources>
+            </configuration>
+        </execution>
+    </executions>
+</plugin>
     </plugins>
+    
+     <resources>
+            <resource>
+                <directory>extlib</directory>
+                <targetPath>/extlib</targetPath>
+                <includes>
+                    <include>**/*.jar</include>
+                </includes>
+            </resource>
+        </resources>
   </build>
+  
+  
+ <repositories>
+		<repository>
+            <id>spring-milestones</id>
+            <name>Spring Milestones</name>
+            <url>https://repo.spring.io/libs-milestone</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+		   
+        <repository>  
+            <id>alimaven</id>  
+            <name>aliyun maven</name>  
+            <url>http://maven.aliyun.com/nexus/content/groups/public/</url>  
+            <releases>  
+                <enabled>true</enabled>  
+            </releases>  
+            <snapshots>  
+                <enabled>false</enabled>  
+            </snapshots>  
+        </repository>  
+</repositories> 
 </project>
