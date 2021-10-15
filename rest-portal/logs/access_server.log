@@ -1,0 +1,308 @@
+2021-09-24 17:10:47,817 INFO  [main] application.RestfulServiceApplication:55 : Starting RestfulServiceApplication on theseusyangdeMacBook-Pro.local with PID 57831 (/Users/theseusyang/Dev/datasphere/rest-portal/target/classes started by theseusyang in /Users/theseusyang/Dev/datasphere/rest-portal)
+2021-09-24 17:10:47,821 INFO  [main] application.RestfulServiceApplication:651 : No active profile set, falling back to default profiles: default
+2021-09-24 17:10:49,017 INFO  [main] tomcat.TomcatWebServer:108 : Tomcat initialized with port(s): 8001 (http)
+2021-09-24 17:10:49,310 INFO  [main] context.ServletWebServerApplicationContext:285 : Root WebApplicationContext: initialization completed in 1430 ms
+2021-09-24 17:10:49,563 WARN  [main] context.AnnotationConfigServletWebServerApplicationContext:558 : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerAdapter' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]: Factory method 'requestMappingHandlerAdapter' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'applicationTaskExecutor' defined in class path resource [org/springframework/boot/autoconfigure/task/TaskExecutionAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor]: Factory method 'applicationTaskExecutor' threw exception; nested exception is java.lang.NoSuchMethodError: org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.setAwaitTerminationMillis(J)V
+2021-09-24 17:10:49,608 INFO  [main] logging.ConditionEvaluationReportLoggingListener:136 : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-09-24 17:10:49,611 ERROR [main] diagnostics.LoggingFailureAnalysisReporter:40 : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+An attempt was made to call a method that does not exist. The attempt was made from the following location:
+
+    org.springframework.boot.task.TaskExecutorBuilder.configure(TaskExecutorBuilder.java:311)
+
+The following method did not exist:
+
+    org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.setAwaitTerminationMillis(J)V
+
+The method's class, org.springframework.scheduling.concurrent.ExecutorConfigurationSupport, is available from the following locations:
+
+    jar:file:/Users/theseusyang/.m2/repository/org/springframework/spring-context/5.2.3.RELEASE/spring-context-5.2.3.RELEASE.jar!/org/springframework/scheduling/concurrent/ExecutorConfigurationSupport.class
+    jar:file:/Users/theseusyang/.m2/repository/org/springframework/spring-context/5.2.5.RELEASE/spring-context-5.2.5.RELEASE.jar!/org/springframework/scheduling/concurrent/ExecutorConfigurationSupport.class
+
+The class hierarchy was loaded from the following locations:
+
+    org.springframework.scheduling.concurrent.ExecutorConfigurationSupport: file:/Users/theseusyang/.m2/repository/org/springframework/spring-context/5.2.3.RELEASE/spring-context-5.2.3.RELEASE.jar
+    org.springframework.scheduling.concurrent.CustomizableThreadFactory: file:/Users/theseusyang/.m2/repository/org/springframework/spring-context/5.2.3.RELEASE/spring-context-5.2.3.RELEASE.jar
+    org.springframework.util.CustomizableThreadCreator: file:/Users/theseusyang/.m2/repository/org/springframework/spring-core/5.2.5.RELEASE/spring-core-5.2.5.RELEASE.jar
+
+
+Action:
+
+Correct the classpath of your application so that it contains a single, compatible version of org.springframework.scheduling.concurrent.ExecutorConfigurationSupport
+
+2021-09-24 17:11:22,331 INFO  [main] application.RestfulServiceApplication:55 : Starting RestfulServiceApplication on theseusyangdeMacBook-Pro.local with PID 57842 (/Users/theseusyang/Dev/datasphere/rest-portal/target/classes started by theseusyang in /Users/theseusyang/Dev/datasphere/rest-portal)
+2021-09-24 17:11:22,334 INFO  [main] application.RestfulServiceApplication:651 : No active profile set, falling back to default profiles: default
+2021-09-24 17:11:23,383 INFO  [main] tomcat.TomcatWebServer:108 : Tomcat initialized with port(s): 8001 (http)
+2021-09-24 17:11:23,693 INFO  [main] context.ServletWebServerApplicationContext:285 : Root WebApplicationContext: initialization completed in 1307 ms
+2021-09-24 17:11:23,991 WARN  [main] context.AnnotationConfigServletWebServerApplicationContext:558 : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerAdapter' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]: Factory method 'requestMappingHandlerAdapter' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'applicationTaskExecutor' defined in class path resource [org/springframework/boot/autoconfigure/task/TaskExecutionAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor]: Factory method 'applicationTaskExecutor' threw exception; nested exception is java.lang.NoSuchMethodError: org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.setAwaitTerminationMillis(J)V
+2021-09-24 17:11:24,047 INFO  [main] logging.ConditionEvaluationReportLoggingListener:136 : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-09-24 17:11:24,051 ERROR [main] diagnostics.LoggingFailureAnalysisReporter:40 : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+An attempt was made to call a method that does not exist. The attempt was made from the following location:
+
+    org.springframework.boot.task.TaskExecutorBuilder.configure(TaskExecutorBuilder.java:311)
+
+The following method did not exist:
+
+    org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.setAwaitTerminationMillis(J)V
+
+The method's class, org.springframework.scheduling.concurrent.ExecutorConfigurationSupport, is available from the following locations:
+
+    jar:file:/Users/theseusyang/.m2/repository/org/springframework/spring-context/5.2.3.RELEASE/spring-context-5.2.3.RELEASE.jar!/org/springframework/scheduling/concurrent/ExecutorConfigurationSupport.class
+    jar:file:/Users/theseusyang/.m2/repository/org/springframework/spring-context/5.2.5.RELEASE/spring-context-5.2.5.RELEASE.jar!/org/springframework/scheduling/concurrent/ExecutorConfigurationSupport.class
+
+The class hierarchy was loaded from the following locations:
+
+    org.springframework.scheduling.concurrent.ExecutorConfigurationSupport: file:/Users/theseusyang/.m2/repository/org/springframework/spring-context/5.2.3.RELEASE/spring-context-5.2.3.RELEASE.jar
+    org.springframework.scheduling.concurrent.CustomizableThreadFactory: file:/Users/theseusyang/.m2/repository/org/springframework/spring-context/5.2.3.RELEASE/spring-context-5.2.3.RELEASE.jar
+    org.springframework.util.CustomizableThreadCreator: file:/Users/theseusyang/.m2/repository/org/springframework/spring-core/5.2.5.RELEASE/spring-core-5.2.5.RELEASE.jar
+
+
+Action:
+
+Correct the classpath of your application so that it contains a single, compatible version of org.springframework.scheduling.concurrent.ExecutorConfigurationSupport
+
+2021-09-24 17:12:38,296 INFO  [main] application.RestfulServiceApplication:55 : Starting RestfulServiceApplication on theseusyangdeMacBook-Pro.local with PID 57871 (/Users/theseusyang/Dev/datasphere/rest-portal/target/classes started by theseusyang in /Users/theseusyang/Dev/datasphere/rest-portal)
+2021-09-24 17:12:38,303 INFO  [main] application.RestfulServiceApplication:651 : No active profile set, falling back to default profiles: default
+2021-09-24 17:12:39,410 INFO  [main] tomcat.TomcatWebServer:108 : Tomcat initialized with port(s): 8001 (http)
+2021-09-24 17:12:39,710 INFO  [main] context.ServletWebServerApplicationContext:285 : Root WebApplicationContext: initialization completed in 1351 ms
+2021-09-24 17:12:39,976 WARN  [main] context.AnnotationConfigServletWebServerApplicationContext:558 : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerAdapter' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]: Factory method 'requestMappingHandlerAdapter' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'applicationTaskExecutor' defined in class path resource [org/springframework/boot/autoconfigure/task/TaskExecutionAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor]: Factory method 'applicationTaskExecutor' threw exception; nested exception is java.lang.NoSuchMethodError: org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.setAwaitTerminationMillis(J)V
+2021-09-24 17:12:40,026 INFO  [main] logging.ConditionEvaluationReportLoggingListener:136 : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-09-24 17:12:40,030 ERROR [main] diagnostics.LoggingFailureAnalysisReporter:40 : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+An attempt was made to call a method that does not exist. The attempt was made from the following location:
+
+    org.springframework.boot.task.TaskExecutorBuilder.configure(TaskExecutorBuilder.java:311)
+
+The following method did not exist:
+
+    org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.setAwaitTerminationMillis(J)V
+
+The method's class, org.springframework.scheduling.concurrent.ExecutorConfigurationSupport, is available from the following locations:
+
+    jar:file:/Users/theseusyang/.m2/repository/org/springframework/spring-context/5.2.3.RELEASE/spring-context-5.2.3.RELEASE.jar!/org/springframework/scheduling/concurrent/ExecutorConfigurationSupport.class
+    jar:file:/Users/theseusyang/.m2/repository/org/springframework/spring-context/5.2.5.RELEASE/spring-context-5.2.5.RELEASE.jar!/org/springframework/scheduling/concurrent/ExecutorConfigurationSupport.class
+
+The class hierarchy was loaded from the following locations:
+
+    org.springframework.scheduling.concurrent.ExecutorConfigurationSupport: file:/Users/theseusyang/.m2/repository/org/springframework/spring-context/5.2.3.RELEASE/spring-context-5.2.3.RELEASE.jar
+    org.springframework.scheduling.concurrent.CustomizableThreadFactory: file:/Users/theseusyang/.m2/repository/org/springframework/spring-context/5.2.3.RELEASE/spring-context-5.2.3.RELEASE.jar
+    org.springframework.util.CustomizableThreadCreator: file:/Users/theseusyang/.m2/repository/org/springframework/spring-core/5.2.5.RELEASE/spring-core-5.2.5.RELEASE.jar
+
+
+Action:
+
+Correct the classpath of your application so that it contains a single, compatible version of org.springframework.scheduling.concurrent.ExecutorConfigurationSupport
+
+2021-09-24 17:16:04,774 INFO  [main] application.RestfulServiceApplication:55 : Starting RestfulServiceApplication on theseusyangdeMacBook-Pro.local with PID 57962 (/Users/theseusyang/Dev/datasphere/rest-portal/target/classes started by theseusyang in /Users/theseusyang/Dev/datasphere/rest-portal)
+2021-09-24 17:16:04,777 INFO  [main] application.RestfulServiceApplication:651 : No active profile set, falling back to default profiles: default
+2021-09-24 17:16:05,877 INFO  [main] tomcat.TomcatWebServer:108 : Tomcat initialized with port(s): 8001 (http)
+2021-09-24 17:16:06,155 INFO  [main] context.ServletWebServerApplicationContext:285 : Root WebApplicationContext: initialization completed in 1325 ms
+2021-09-24 17:16:06,409 WARN  [main] context.AnnotationConfigServletWebServerApplicationContext:558 : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerAdapter' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]: Factory method 'requestMappingHandlerAdapter' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'applicationTaskExecutor' defined in class path resource [org/springframework/boot/autoconfigure/task/TaskExecutionAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor]: Factory method 'applicationTaskExecutor' threw exception; nested exception is java.lang.NoSuchMethodError: org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.setAwaitTerminationMillis(J)V
+2021-09-24 17:16:06,470 INFO  [main] logging.ConditionEvaluationReportLoggingListener:136 : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-09-24 17:16:06,474 ERROR [main] diagnostics.LoggingFailureAnalysisReporter:40 : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+An attempt was made to call a method that does not exist. The attempt was made from the following location:
+
+    org.springframework.boot.task.TaskExecutorBuilder.configure(TaskExecutorBuilder.java:311)
+
+The following method did not exist:
+
+    org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.setAwaitTerminationMillis(J)V
+
+The method's class, org.springframework.scheduling.concurrent.ExecutorConfigurationSupport, is available from the following locations:
+
+    jar:file:/Users/theseusyang/.m2/repository/org/springframework/spring-context/5.2.3.RELEASE/spring-context-5.2.3.RELEASE.jar!/org/springframework/scheduling/concurrent/ExecutorConfigurationSupport.class
+
+The class hierarchy was loaded from the following locations:
+
+    org.springframework.scheduling.concurrent.ExecutorConfigurationSupport: file:/Users/theseusyang/.m2/repository/org/springframework/spring-context/5.2.3.RELEASE/spring-context-5.2.3.RELEASE.jar
+    org.springframework.scheduling.concurrent.CustomizableThreadFactory: file:/Users/theseusyang/.m2/repository/org/springframework/spring-context/5.2.3.RELEASE/spring-context-5.2.3.RELEASE.jar
+    org.springframework.util.CustomizableThreadCreator: file:/Users/theseusyang/.m2/repository/org/springframework/spring-core/5.2.5.RELEASE/spring-core-5.2.5.RELEASE.jar
+
+
+Action:
+
+Correct the classpath of your application so that it contains a single, compatible version of org.springframework.scheduling.concurrent.ExecutorConfigurationSupport
+
+2021-09-24 17:19:41,500 INFO  [main] application.RestfulServiceApplication:55 : Starting RestfulServiceApplication on theseusyangdeMacBook-Pro.local with PID 58056 (/Users/theseusyang/Dev/datasphere/rest-portal/target/classes started by theseusyang in /Users/theseusyang/Dev/datasphere/rest-portal)
+2021-09-24 17:19:41,504 INFO  [main] application.RestfulServiceApplication:651 : No active profile set, falling back to default profiles: default
+2021-09-24 17:19:42,719 INFO  [main] tomcat.TomcatWebServer:108 : Tomcat initialized with port(s): 8001 (http)
+2021-09-24 17:19:43,072 INFO  [main] context.ServletWebServerApplicationContext:285 : Root WebApplicationContext: initialization completed in 1506 ms
+2021-09-24 17:19:43,318 WARN  [main] context.AnnotationConfigServletWebServerApplicationContext:558 : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerAdapter' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]: Factory method 'requestMappingHandlerAdapter' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'applicationTaskExecutor' defined in class path resource [org/springframework/boot/autoconfigure/task/TaskExecutionAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor]: Factory method 'applicationTaskExecutor' threw exception; nested exception is java.lang.NoSuchMethodError: org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.setAwaitTerminationMillis(J)V
+2021-09-24 17:19:43,380 INFO  [main] logging.ConditionEvaluationReportLoggingListener:136 : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-09-24 17:19:43,383 ERROR [main] diagnostics.LoggingFailureAnalysisReporter:40 : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+An attempt was made to call a method that does not exist. The attempt was made from the following location:
+
+    org.springframework.boot.task.TaskExecutorBuilder.configure(TaskExecutorBuilder.java:311)
+
+The following method did not exist:
+
+    org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.setAwaitTerminationMillis(J)V
+
+The method's class, org.springframework.scheduling.concurrent.ExecutorConfigurationSupport, is available from the following locations:
+
+    jar:file:/Users/theseusyang/.m2/repository/org/springframework/spring-context/5.2.3.RELEASE/spring-context-5.2.3.RELEASE.jar!/org/springframework/scheduling/concurrent/ExecutorConfigurationSupport.class
+    jar:file:/Users/theseusyang/.m2/repository/org/springframework/spring-context/5.2.5.RELEASE/spring-context-5.2.5.RELEASE.jar!/org/springframework/scheduling/concurrent/ExecutorConfigurationSupport.class
+
+The class hierarchy was loaded from the following locations:
+
+    org.springframework.scheduling.concurrent.ExecutorConfigurationSupport: file:/Users/theseusyang/.m2/repository/org/springframework/spring-context/5.2.3.RELEASE/spring-context-5.2.3.RELEASE.jar
+    org.springframework.scheduling.concurrent.CustomizableThreadFactory: file:/Users/theseusyang/.m2/repository/org/springframework/spring-context/5.2.3.RELEASE/spring-context-5.2.3.RELEASE.jar
+    org.springframework.util.CustomizableThreadCreator: file:/Users/theseusyang/.m2/repository/org/springframework/spring-core/5.2.5.RELEASE/spring-core-5.2.5.RELEASE.jar
+
+
+Action:
+
+Correct the classpath of your application so that it contains a single, compatible version of org.springframework.scheduling.concurrent.ExecutorConfigurationSupport
+
+2021-09-24 17:22:26,307 INFO  [main] application.RestfulServiceApplication:55 : Starting RestfulServiceApplication on theseusyangdeMacBook-Pro.local with PID 58131 (/Users/theseusyang/Dev/datasphere/rest-portal/target/classes started by theseusyang in /Users/theseusyang/Dev/datasphere/rest-portal)
+2021-09-24 17:22:26,310 INFO  [main] application.RestfulServiceApplication:651 : No active profile set, falling back to default profiles: default
+2021-09-24 17:22:27,491 INFO  [main] tomcat.TomcatWebServer:108 : Tomcat initialized with port(s): 8001 (http)
+2021-09-24 17:22:27,766 INFO  [main] context.ServletWebServerApplicationContext:285 : Root WebApplicationContext: initialization completed in 1403 ms
+2021-09-24 17:22:28,004 WARN  [main] context.AnnotationConfigServletWebServerApplicationContext:558 : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerAdapter' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]: Factory method 'requestMappingHandlerAdapter' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'applicationTaskExecutor' defined in class path resource [org/springframework/boot/autoconfigure/task/TaskExecutionAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor]: Factory method 'applicationTaskExecutor' threw exception; nested exception is java.lang.NoSuchMethodError: org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.setAwaitTerminationMillis(J)V
+2021-09-24 17:22:28,061 INFO  [main] logging.ConditionEvaluationReportLoggingListener:136 : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-09-24 17:22:28,064 ERROR [main] diagnostics.LoggingFailureAnalysisReporter:40 : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+An attempt was made to call a method that does not exist. The attempt was made from the following location:
+
+    org.springframework.boot.task.TaskExecutorBuilder.configure(TaskExecutorBuilder.java:311)
+
+The following method did not exist:
+
+    org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.setAwaitTerminationMillis(J)V
+
+The method's class, org.springframework.scheduling.concurrent.ExecutorConfigurationSupport, is available from the following locations:
+
+    jar:file:/Users/theseusyang/.m2/repository/org/springframework/spring-context/5.2.3.RELEASE/spring-context-5.2.3.RELEASE.jar!/org/springframework/scheduling/concurrent/ExecutorConfigurationSupport.class
+    jar:file:/Users/theseusyang/.m2/repository/org/springframework/spring-context/5.2.5.RELEASE/spring-context-5.2.5.RELEASE.jar!/org/springframework/scheduling/concurrent/ExecutorConfigurationSupport.class
+
+The class hierarchy was loaded from the following locations:
+
+    org.springframework.scheduling.concurrent.ExecutorConfigurationSupport: file:/Users/theseusyang/.m2/repository/org/springframework/spring-context/5.2.3.RELEASE/spring-context-5.2.3.RELEASE.jar
+    org.springframework.scheduling.concurrent.CustomizableThreadFactory: file:/Users/theseusyang/.m2/repository/org/springframework/spring-context/5.2.3.RELEASE/spring-context-5.2.3.RELEASE.jar
+    org.springframework.util.CustomizableThreadCreator: file:/Users/theseusyang/.m2/repository/org/springframework/spring-core/5.2.5.RELEASE/spring-core-5.2.5.RELEASE.jar
+
+
+Action:
+
+Correct the classpath of your application so that it contains a single, compatible version of org.springframework.scheduling.concurrent.ExecutorConfigurationSupport
+
+2021-09-24 17:25:25,099 INFO  [main] application.RestfulServiceApplication:55 : Starting RestfulServiceApplication on theseusyangdeMacBook-Pro.local with PID 58217 (/Users/theseusyang/Dev/datasphere/rest-portal/target/classes started by theseusyang in /Users/theseusyang/Dev/datasphere/rest-portal)
+2021-09-24 17:25:25,103 INFO  [main] application.RestfulServiceApplication:651 : No active profile set, falling back to default profiles: default
+2021-09-24 17:25:26,649 INFO  [main] tomcat.TomcatWebServer:108 : Tomcat initialized with port(s): 8001 (http)
+2021-09-24 17:25:27,070 INFO  [main] context.ServletWebServerApplicationContext:285 : Root WebApplicationContext: initialization completed in 1896 ms
+2021-09-24 17:25:27,413 WARN  [main] context.AnnotationConfigServletWebServerApplicationContext:558 : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerAdapter' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]: Factory method 'requestMappingHandlerAdapter' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'applicationTaskExecutor' defined in class path resource [org/springframework/boot/autoconfigure/task/TaskExecutionAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor]: Factory method 'applicationTaskExecutor' threw exception; nested exception is java.lang.NoSuchMethodError: org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.setAwaitTerminationMillis(J)V
+2021-09-24 17:25:27,471 INFO  [main] logging.ConditionEvaluationReportLoggingListener:136 : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-09-24 17:25:27,475 ERROR [main] diagnostics.LoggingFailureAnalysisReporter:40 : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+An attempt was made to call a method that does not exist. The attempt was made from the following location:
+
+    org.springframework.boot.task.TaskExecutorBuilder.configure(TaskExecutorBuilder.java:311)
+
+The following method did not exist:
+
+    org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.setAwaitTerminationMillis(J)V
+
+The method's class, org.springframework.scheduling.concurrent.ExecutorConfigurationSupport, is available from the following locations:
+
+    jar:file:/Users/theseusyang/.m2/repository/org/springframework/spring-context/5.2.3.RELEASE/spring-context-5.2.3.RELEASE.jar!/org/springframework/scheduling/concurrent/ExecutorConfigurationSupport.class
+    jar:file:/Users/theseusyang/.m2/repository/org/springframework/spring-context/5.2.5.RELEASE/spring-context-5.2.5.RELEASE.jar!/org/springframework/scheduling/concurrent/ExecutorConfigurationSupport.class
+
+The class hierarchy was loaded from the following locations:
+
+    org.springframework.scheduling.concurrent.ExecutorConfigurationSupport: file:/Users/theseusyang/.m2/repository/org/springframework/spring-context/5.2.3.RELEASE/spring-context-5.2.3.RELEASE.jar
+    org.springframework.scheduling.concurrent.CustomizableThreadFactory: file:/Users/theseusyang/.m2/repository/org/springframework/spring-context/5.2.3.RELEASE/spring-context-5.2.3.RELEASE.jar
+    org.springframework.util.CustomizableThreadCreator: file:/Users/theseusyang/.m2/repository/org/springframework/spring-core/5.2.5.RELEASE/spring-core-5.2.5.RELEASE.jar
+
+
+Action:
+
+Correct the classpath of your application so that it contains a single, compatible version of org.springframework.scheduling.concurrent.ExecutorConfigurationSupport
+
+2021-09-24 17:31:54,827 INFO  [main] application.RestfulServiceApplication:55 : Starting RestfulServiceApplication on theseusyangdeMacBook-Pro.local with PID 58387 (/Users/theseusyang/Dev/datasphere/rest-portal/target/classes started by theseusyang in /Users/theseusyang/Dev/datasphere/rest-portal)
+2021-09-24 17:31:54,831 INFO  [main] application.RestfulServiceApplication:651 : No active profile set, falling back to default profiles: default
+2021-09-24 17:31:55,909 INFO  [main] tomcat.TomcatWebServer:108 : Tomcat initialized with port(s): 8001 (http)
+2021-09-24 17:31:56,170 INFO  [main] context.ServletWebServerApplicationContext:285 : Root WebApplicationContext: initialization completed in 1280 ms
+2021-09-24 17:31:56,442 INFO  [main] concurrent.ThreadPoolTaskExecutor:181 : Initializing ExecutorService 'applicationTaskExecutor'
+2021-09-24 17:31:56,760 INFO  [main] servlet.UserDetailsServiceAutoConfiguration:86 : 
+
+Using generated security password: e6dbacc9-d163-4ca9-a6cb-ac71df1b263b
+
+2021-09-24 17:31:56,872 INFO  [main] web.DefaultSecurityFilterChain:43 : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3caafa67, org.springframework.security.web.context.SecurityContextPersistenceFilter@2b73bd6b, org.springframework.security.web.header.HeaderWriterFilter@5f0bab7e, org.springframework.security.web.csrf.CsrfFilter@52c9d3d0, org.springframework.security.web.authentication.logout.LogoutFilter@159424e2, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@626d2016, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@3663d0ba, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@3e546734, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@58f2466c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@750ed637, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@384fda47, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@53747c4a, org.springframework.security.web.session.SessionManagementFilter@337a6d30, org.springframework.security.web.access.ExceptionTranslationFilter@58fd1214, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@151ab2b9]
+2021-09-24 17:31:56,942 INFO  [main] tomcat.TomcatWebServer:220 : Tomcat started on port(s): 8001 (http) with context path ''
+2021-09-24 17:31:56,953 INFO  [main] application.RestfulServiceApplication:61 : Started RestfulServiceApplication in 2.75 seconds (JVM running for 3.39)
+2021-09-24 17:32:59,577 INFO  [http-nio-8001-exec-1] servlet.DispatcherServlet:525 : Initializing Servlet 'dispatcherServlet'
+2021-09-24 17:32:59,589 INFO  [http-nio-8001-exec-1] servlet.DispatcherServlet:547 : Completed initialization in 11 ms
+2021-09-24 17:34:06,852 INFO  [SpringContextShutdownHook] concurrent.ThreadPoolTaskExecutor:218 : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-09-24 17:35:02,882 INFO  [main] application.RestfulServiceApplication:55 : Starting RestfulServiceApplication on theseusyangdeMacBook-Pro.local with PID 58465 (/Users/theseusyang/Dev/datasphere/rest-portal/target/classes started by theseusyang in /Users/theseusyang/Dev/datasphere/rest-portal)
+2021-09-24 17:35:02,898 INFO  [main] application.RestfulServiceApplication:651 : No active profile set, falling back to default profiles: default
+2021-09-24 17:35:04,485 INFO  [main] tomcat.TomcatWebServer:108 : Tomcat initialized with port(s): 8001 (http)
+2021-09-24 17:35:04,814 INFO  [main] context.ServletWebServerApplicationContext:285 : Root WebApplicationContext: initialization completed in 1840 ms
+2021-09-24 17:35:05,134 INFO  [main] concurrent.ThreadPoolTaskExecutor:181 : Initializing ExecutorService 'applicationTaskExecutor'
+2021-09-24 17:35:05,531 INFO  [main] servlet.UserDetailsServiceAutoConfiguration:86 : 
+
+Using generated security password: 2157a49d-4222-459e-8c14-2c17ee785b09
+
+2021-09-24 17:35:05,653 INFO  [main] web.DefaultSecurityFilterChain:43 : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@28be7fec, org.springframework.security.web.context.SecurityContextPersistenceFilter@563ccd31, org.springframework.security.web.header.HeaderWriterFilter@570a62a5, org.springframework.security.web.csrf.CsrfFilter@73a6cc79, org.springframework.security.web.authentication.logout.LogoutFilter@4f114b, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@496cc217, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@6aa7e176, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@26f0141, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@437ed416, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@478fb7dc, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1a1f79ce, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@34136bd1, org.springframework.security.web.session.SessionManagementFilter@1ee5632d, org.springframework.security.web.access.ExceptionTranslationFilter@39023dbf, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5a9840f3]
+2021-09-24 17:35:05,730 INFO  [main] tomcat.TomcatWebServer:220 : Tomcat started on port(s): 8001 (http) with context path ''
+2021-09-24 17:35:05,742 INFO  [main] application.RestfulServiceApplication:61 : Started RestfulServiceApplication in 3.713 seconds (JVM running for 4.897)
+2021-09-24 17:35:14,919 INFO  [http-nio-8001-exec-1] servlet.DispatcherServlet:525 : Initializing Servlet 'dispatcherServlet'
+2021-09-24 17:35:14,931 INFO  [http-nio-8001-exec-1] servlet.DispatcherServlet:547 : Completed initialization in 11 ms

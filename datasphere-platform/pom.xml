@@ -23,7 +23,7 @@
 		    <version>4.4</version>
 		</dependency>
 		
-		<dependency>
+		<!-- <dependency>
 		    <groupId>org.springframework.security</groupId>
 		    <artifactId>spring-security-config</artifactId>
 		    <version>5.2.3.RELEASE</version>
@@ -33,13 +33,9 @@
 		    <groupId>org.springframework.security</groupId>
 		    <artifactId>spring-security-web</artifactId>
 		    <version>5.2.3.RELEASE</version>
-		</dependency>
+		</dependency> -->
 		
-		<dependency>
-		    <groupId>org.springframework</groupId>
-		    <artifactId>spring-context</artifactId>
-		    <version>5.2.3.RELEASE</version>
-		</dependency>
+		
 		
 		<dependency>
 		    <groupId>org.slf4j</groupId>
@@ -66,23 +62,9 @@
 			</exclusions>
 		</dependency>
 		
-		<dependency>
-		    <groupId>org.springframework</groupId>
-		    <artifactId>spring-webmvc</artifactId>
-		    <version>5.2.3.RELEASE</version>
-		</dependency>
 		
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-jdbc</artifactId>
-			<version>5.2.3.RELEASE</version>
-		</dependency>
 		
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-tx</artifactId>
-			<version>5.2.3.RELEASE</version>
-		</dependency>
+		
 		
 	</dependencies>
 	

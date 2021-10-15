@@ -1,10 +1,10 @@
 /*-
  * ===============LICENSE_START=======================================================
- * Acumos
+ * DataSphere
  * ===================================================================================
  * Copyright (C) 2017 AT&T Intellectual Property & Tech Mahindra. All rights reserved.
  * ===================================================================================
- * This Acumos software file is distributed by AT&T and Tech Mahindra
+ * This DataSphere software file is distributed by AT&T and Tech Mahindra
  * under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -30,32 +30,32 @@ import java.util.UUID;
 
 import javax.servlet.http.HttpServletResponse;
 
-import org.acumos.cds.CCDSConstants;
-import org.acumos.cds.CodeNameType;
-import org.acumos.cds.MLPResponse;
-import org.acumos.cds.domain.MLPCatRoleMap;
-import org.acumos.cds.domain.MLPCatSolMap;
-import org.acumos.cds.domain.MLPCatalog;
-import org.acumos.cds.domain.MLPCatalog_;
-import org.acumos.cds.domain.MLPRole;
-import org.acumos.cds.domain.MLPSolution;
-import org.acumos.cds.domain.MLPUserCatFavMap;
-import org.acumos.cds.repository.CatRoleMapRepository;
-import org.acumos.cds.repository.CatSolMapRepository;
-import org.acumos.cds.repository.CatalogRepository;
-import org.acumos.cds.repository.RevCatDescriptionRepository;
-import org.acumos.cds.repository.RevCatDocMapRepository;
-import org.acumos.cds.repository.RoleRepository;
-import org.acumos.cds.repository.SolutionRepository;
-import org.acumos.cds.repository.UserCatFavMapRepository;
-import org.acumos.cds.repository.UserRepository;
-import org.acumos.cds.service.CatalogSearchService;
-import org.acumos.cds.transport.BatchIdRoleRequest;
-import org.acumos.cds.transport.CountTransport;
-import org.acumos.cds.transport.ErrorTransport;
-import org.acumos.cds.transport.MLPTransportModel;
-import org.acumos.cds.transport.SuccessTransport;
-import org.acumos.cds.util.ApiPageable;
+import com.huahui.datasphere.cds.CCDSConstants;
+import com.huahui.datasphere.cds.CodeNameType;
+import com.huahui.datasphere.cds.MLPResponse;
+import com.huahui.datasphere.cds.domain.MLPCatRoleMap;
+import com.huahui.datasphere.cds.domain.MLPCatSolMap;
+import com.huahui.datasphere.cds.domain.MLPCatalog;
+import com.huahui.datasphere.cds.domain.MLPCatalog_;
+import com.huahui.datasphere.cds.domain.MLPRole;
+import com.huahui.datasphere.cds.domain.MLPSolution;
+import com.huahui.datasphere.cds.domain.MLPUserCatFavMap;
+import com.huahui.datasphere.cds.repository.CatRoleMapRepository;
+import com.huahui.datasphere.cds.repository.CatSolMapRepository;
+import com.huahui.datasphere.cds.repository.CatalogRepository;
+import com.huahui.datasphere.cds.repository.RevCatDescriptionRepository;
+import com.huahui.datasphere.cds.repository.RevCatDocMapRepository;
+import com.huahui.datasphere.cds.repository.RoleRepository;
+import com.huahui.datasphere.cds.repository.SolutionRepository;
+import com.huahui.datasphere.cds.repository.UserCatFavMapRepository;
+import com.huahui.datasphere.cds.repository.UserRepository;
+import com.huahui.datasphere.cds.service.CatalogSearchService;
+import com.huahui.datasphere.cds.transport.BatchIdRoleRequest;
+import com.huahui.datasphere.cds.transport.CountTransport;
+import com.huahui.datasphere.cds.transport.ErrorTransport;
+import com.huahui.datasphere.cds.transport.MLPTransportModel;
+import com.huahui.datasphere.cds.transport.SuccessTransport;
+import com.huahui.datasphere.cds.util.ApiPageable;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

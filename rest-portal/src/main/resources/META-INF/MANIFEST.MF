@@ -1,0 +1,2 @@
+Manifest-Version: 1.0
+Unidata-Module-Class: org.unidata.mdm.rest.core.module.CoreRestModule

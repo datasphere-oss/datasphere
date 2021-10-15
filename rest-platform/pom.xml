@@ -1,0 +1,158 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.huahui.datasphre</groupId>
+  <artifactId>rest-platform</artifactId>
+  <version>1.0.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+<properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.build.sourceJavaVersion>1.8</project.build.sourceJavaVersion>
+    <hadoop-lib-version>2.7.1</hadoop-lib-version>
+    <junit.version>4.12</junit.version>
+    <jacoco.version>0.8.2</jacoco.version>
+
+    <powermock.version>1.7.4</powermock.version>
+    <mockito.version>1.10.19</mockito.version>
+
+    <failsafe.version>2.22.0</failsafe.version>
+    <surefire.version>2.22.0</surefire.version>
+    <flap-doodle.version>2.1.2</flap-doodle.version>
+    <system-rules-version>1.19.0</system-rules-version>
+
+    <json-simple.version>1.1.1</json-simple.version>
+    <commons-config.version>1.10</commons-config.version>
+    <commons-lang3.version>3.3.2</commons-lang3.version>
+    <commons-io.version>2.4</commons-io.version>
+    <commons-exec.version>1.2</commons-exec.version>
+    <commons-collection.version>3.0</commons-collection.version>
+    <jacoco-maven-plugin.version>0.8.2</jacoco-maven-plugin.version>
+  </properties>
+  
+  <dependencies>
+       
+       
+		<dependency>
+		    <groupId>org.springframework</groupId>
+		    <artifactId>spring-beans</artifactId>
+		    <version>5.2.3.RELEASE</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>org.apache.cxf</groupId>
+		    <artifactId>cxf-core</artifactId>
+		    <version>3.3.3</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>org.apache.cxf</groupId>
+		    <artifactId>cxf-rt-frontend-jaxrs</artifactId>
+		    <version>3.3.3</version>
+		</dependency>
+	
+		<dependency>
+		    <groupId>org.apache.cxf</groupId>
+		    <artifactId>cxf-rt-rs-service-description-openapi-v3</artifactId>
+		    <version>3.3.3</version>
+		</dependency>
+	
+	<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core -->
+	<dependency>
+	    <groupId>com.fasterxml.jackson.core</groupId>
+	    <artifactId>jackson-core</artifactId>
+	    <version>2.12.1</version>
+	</dependency>
+	
+		<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
+	<dependency>
+	    <groupId>com.fasterxml.jackson.core</groupId>
+	    <artifactId>jackson-databind</artifactId>
+	    <version>2.12.1</version>
+	</dependency>
+
+	
+	<dependency>
+	    <groupId>com.fasterxml.jackson.core</groupId>
+	    <artifactId>jackson-annotations</artifactId>
+	    <version>2.12.1</version>
+	</dependency>
+	
+
+	<dependency>
+	    <groupId>com.fasterxml.jackson.core</groupId>
+	    <artifactId>jackson-annotations</artifactId>
+	    <version>2.12.1</version>
+	</dependency>
+
+<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.jaxrs/jackson-jaxrs-base -->
+	<dependency>
+	    <groupId>com.fasterxml.jackson.jaxrs</groupId>
+	    <artifactId>jackson-jaxrs-base</artifactId>
+	    <version>2.12.1</version>
+	</dependency>
+	
+	<dependency>
+	    <groupId>com.fasterxml.jackson.jaxrs</groupId>
+	    <artifactId>jackson-jaxrs-base</artifactId>
+	    <version>2.12.1</version>
+	</dependency>
+	
+	<dependency>
+	    <groupId>com.fasterxml.jackson.datatype</groupId>
+	    <artifactId>jackson-datatype-jsr310</artifactId>
+	    <version>2.12.1</version>
+	</dependency>
+
+    <dependency>
+	    <groupId>javax.servlet</groupId>
+	    <artifactId>javax.servlet-api</artifactId>
+	    <version>4.0.1</version>
+	</dependency>
+	
+	
+	
+	<dependency>
+	    <groupId>org.webjars</groupId>
+	    <artifactId>swagger-ui</artifactId>
+	    <version>3.25.0</version>
+	</dependency>
+	
+    
+    </dependencies>
+    
+  <build>
+    <sourceDirectory>src</sourceDirectory>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.0</version>
+        <configuration>
+          <release>11</release>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+  
+	<repositories>
+		<repository>  
+		   <id>central</id>  
+		   <name>Maven Repository Switchboard</name>  
+		   <layout>default</layout>  
+		   <url>http://repo1.maven.org/maven2</url>  
+		   <snapshots>  
+		     <enabled>false</enabled>  
+		   </snapshots>  
+		 </repository>   
+        <repository>  
+            <id>alimaven</id>  
+            <name>aliyun maven</name>  
+            <url>http://maven.aliyun.com/nexus/content/groups/public/</url>  
+            <releases>  
+                <enabled>true</enabled>  
+            </releases>  
+            <snapshots>  
+                <enabled>false</enabled>  
+            </snapshots>  
+        </repository>  
+	</repositories> 
+
+</project>

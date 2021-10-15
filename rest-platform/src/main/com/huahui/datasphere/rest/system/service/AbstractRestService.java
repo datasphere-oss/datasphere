@@ -26,6 +26,7 @@ package com.huahui.datasphere.rest.system.service;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.time.LocalDateTime;
+
 import javax.servlet.http.HttpServletRequest;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.Produces;
@@ -43,8 +44,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.unidata.mdm.rest.system.exception.IllegalParameterFormatException;
 import org.unidata.mdm.rest.system.exception.MissingParameterException;
-import org.unidata.mdm.rest.system.ro.RestResponse;
+
 import com.huahui.datasphere.system.util.IpUtils;
+import com.huahui.datasphere.rest.system.ro.RestResponse;
 import com.huahui.datasphere.system.util.ConvertUtils;
 
 /*
@@ -133,7 +135,7 @@ public abstract class AbstractRestService {
         return Response.status(Response.Status.NOT_FOUND).build();
     }
 
-    protected HttpServletRequest getHSR() {
+    protected javax.servlet.http.HttpServletRequest getHSR() {
         return this.hsr;
     }
 

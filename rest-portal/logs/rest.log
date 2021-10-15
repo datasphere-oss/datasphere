@@ -1,0 +1,115 @@
+2021-09-24 17:40:16,138 INFO  [main] application.RestfulServiceApplication:55 : Starting RestfulServiceApplication on theseusyangdeMacBook-Pro.local with PID 58594 (/Users/theseusyang/Dev/datasphere/rest-portal/target/classes started by theseusyang in /Users/theseusyang/Dev/datasphere/rest-portal)
+2021-09-24 17:40:16,141 INFO  [main] application.RestfulServiceApplication:651 : No active profile set, falling back to default profiles: default
+2021-09-24 17:40:17,288 INFO  [main] tomcat.TomcatWebServer:108 : Tomcat initialized with port(s): 8002 (http)
+2021-09-24 17:40:17,547 INFO  [main] context.ServletWebServerApplicationContext:285 : Root WebApplicationContext: initialization completed in 1342 ms
+2021-09-24 17:40:17,829 INFO  [main] concurrent.ThreadPoolTaskExecutor:181 : Initializing ExecutorService 'applicationTaskExecutor'
+2021-09-24 17:40:18,135 INFO  [main] servlet.UserDetailsServiceAutoConfiguration:86 : 
+
+Using generated security password: e2891b3c-f382-4cc3-98bd-371d3363980b
+
+2021-09-24 17:40:18,229 INFO  [main] web.DefaultSecurityFilterChain:43 : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4f59a516, org.springframework.security.web.context.SecurityContextPersistenceFilter@7f4596d0, org.springframework.security.web.header.HeaderWriterFilter@261bd7b, org.springframework.security.web.csrf.CsrfFilter@2921a36a, org.springframework.security.web.authentication.logout.LogoutFilter@3fe512d2, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@12d2ddde, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@3b24087d, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@4e22368c, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@52d3fafd, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@588545ac, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@f238e4f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@411cd156, org.springframework.security.web.session.SessionManagementFilter@390037e7, org.springframework.security.web.access.ExceptionTranslationFilter@1f992a3a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3caafa67]
+2021-09-24 17:40:18,295 INFO  [main] tomcat.TomcatWebServer:220 : Tomcat started on port(s): 8002 (http) with context path ''
+2021-09-24 17:40:18,308 INFO  [main] application.RestfulServiceApplication:61 : Started RestfulServiceApplication in 2.767 seconds (JVM running for 3.422)
+2021-09-24 17:40:27,459 INFO  [SpringContextShutdownHook] concurrent.ThreadPoolTaskExecutor:218 : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-09-24 17:41:06,873 INFO  [main] application.RestfulServiceApplication:55 : Starting RestfulServiceApplication on theseusyangdeMacBook-Pro.local with PID 58618 (/Users/theseusyang/Dev/datasphere/rest-portal/target/classes started by theseusyang in /Users/theseusyang/Dev/datasphere/rest-portal)
+2021-09-24 17:41:06,876 INFO  [main] application.RestfulServiceApplication:651 : No active profile set, falling back to default profiles: default
+2021-09-24 17:41:08,184 INFO  [main] tomcat.TomcatWebServer:108 : Tomcat initialized with port(s): 8002 (http)
+2021-09-24 17:41:08,476 INFO  [main] context.ServletWebServerApplicationContext:285 : Root WebApplicationContext: initialization completed in 1535 ms
+2021-09-24 17:41:08,778 INFO  [main] concurrent.ThreadPoolTaskExecutor:181 : Initializing ExecutorService 'applicationTaskExecutor'
+2021-09-24 17:41:09,121 INFO  [main] servlet.UserDetailsServiceAutoConfiguration:86 : 
+
+Using generated security password: d552e598-b834-4d6d-921d-771462efad9a
+
+2021-09-24 17:41:09,263 INFO  [main] web.DefaultSecurityFilterChain:43 : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3b0d3a63, org.springframework.security.web.context.SecurityContextPersistenceFilter@1e6060f1, org.springframework.security.web.header.HeaderWriterFilter@6d5f4900, org.springframework.security.web.csrf.CsrfFilter@1511d157, org.springframework.security.web.authentication.logout.LogoutFilter@7aded903, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@615db358, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@72465eb2, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@50598a1a, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@496cc217, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2c6c302f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@563ccd31, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@14de1901, org.springframework.security.web.session.SessionManagementFilter@1b560eb0, org.springframework.security.web.access.ExceptionTranslationFilter@51ba952e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@515ab3f2]
+2021-09-24 17:41:09,337 INFO  [main] tomcat.TomcatWebServer:220 : Tomcat started on port(s): 8002 (http) with context path ''
+2021-09-24 17:41:09,349 INFO  [main] application.RestfulServiceApplication:61 : Started RestfulServiceApplication in 3.055 seconds (JVM running for 4.109)
+2021-09-24 17:41:39,074 INFO  [http-nio-8002-exec-1] servlet.DispatcherServlet:525 : Initializing Servlet 'dispatcherServlet'
+2021-09-24 17:41:39,084 INFO  [http-nio-8002-exec-1] servlet.DispatcherServlet:547 : Completed initialization in 9 ms
+2021-09-24 17:57:40,799 INFO  [main] application.RestfulServiceApplication:55 : Starting RestfulServiceApplication on theseusyangdeMacBook-Pro.local with PID 59037 (/Users/theseusyang/Dev/datasphere/rest-portal/target/classes started by theseusyang in /Users/theseusyang/Dev/datasphere/rest-portal)
+2021-09-24 17:57:40,803 INFO  [main] application.RestfulServiceApplication:651 : No active profile set, falling back to default profiles: default
+2021-09-24 17:57:41,514 ERROR [main] boot.SpringApplication:837 : Application run failed
+java.lang.IllegalStateException: Error processing condition on org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration.propertySourcesPlaceholderConfigurer
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:60)
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:108)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForBeanMethod(ConfigurationClassBeanDefinitionReader.java:184)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:144)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:120)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:331)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:236)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:275)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:95)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:706)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:532)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.huahui.datasphere.platform.rest.application.RestfulServiceApplication.main(RestfulServiceApplication.java:42)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.huahui.datasphere.platform.rest.core.configuration.CoreRestConfiguration] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@7aec35a]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:481)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:358)
+	at org.springframework.util.ReflectionUtils.getUniqueDeclaredMethods(ReflectionUtils.java:414)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.lambda$getTypeForFactoryMethod$2(AbstractAutowireCapableBeanFactory.java:743)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1705)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryMethod(AbstractAutowireCapableBeanFactory.java:742)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:681)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:649)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1605)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:494)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.collectBeanNamesForType(OnBeanCondition.java:238)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:231)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:221)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchingBeans(OnBeanCondition.java:169)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchOutcome(OnBeanCondition.java:144)
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:47)
+	... 18 more
+Caused by: java.lang.NoClassDefFoundError: ReceiveInInterceptor
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3166)
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2309)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:463)
+	... 34 more
+Caused by: java.lang.ClassNotFoundException: ReceiveInInterceptor
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:581)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	... 38 more
+2021-09-24 17:57:41,525 WARN  [main] boot.SpringApplication:819 : Unable to close ApplicationContext
+java.lang.IllegalStateException: Failed to introspect Class [com.huahui.datasphere.platform.rest.core.configuration.CoreRestConfiguration] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@7aec35a]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:481)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:358)
+	at org.springframework.util.ReflectionUtils.getUniqueDeclaredMethods(ReflectionUtils.java:414)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.lambda$getTypeForFactoryMethod$2(AbstractAutowireCapableBeanFactory.java:743)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1705)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryMethod(AbstractAutowireCapableBeanFactory.java:742)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:681)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:649)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1605)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:494)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:616)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:608)
+	at org.springframework.context.support.AbstractApplicationContext.getBeansOfType(AbstractApplicationContext.java:1242)
+	at org.springframework.boot.SpringApplication.getExitCodeFromMappedException(SpringApplication.java:880)
+	at org.springframework.boot.SpringApplication.getExitCodeFromException(SpringApplication.java:868)
+	at org.springframework.boot.SpringApplication.handleExitCode(SpringApplication.java:855)
+	at org.springframework.boot.SpringApplication.handleRunFailure(SpringApplication.java:806)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:325)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.huahui.datasphere.platform.rest.application.RestfulServiceApplication.main(RestfulServiceApplication.java:42)
+Caused by: java.lang.NoClassDefFoundError: ReceiveInInterceptor
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3166)
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2309)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:463)
+	... 21 more
+Caused by: java.lang.ClassNotFoundException: ReceiveInInterceptor
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:581)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	... 25 more
