@@ -1,5 +1,5 @@
 # DataSphere
-DataSphere is an open-source cloud-native DaaS platform that helps you build digital infrastructure in your warehouses, lakes and databases.
+DataSphere is an open-source cloud-native data observability platform that helps you build digital infrastructure in your warehouses, lakes and databases.
 
 <div align="center">
 <h1>DataSphere</h1>
